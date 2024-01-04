@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App with api</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body style="background-color: silver;">
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <img class="news-logo" src="https://img.pikbest.com/origin/09/30/89/73XpIkbEsTgJk.png!sw800" height="100" width="100" alt="news logo">
+                <span class="news-heading">Daily News</span>
+                 </div>
+            <ul >
+                <li><a id="Politics"  onclick="navItem('politics')" href="#">Politics</a></li>
+                <li><a id="Sports" onclick="navItem('sports')" href="#">Sports</a></li>
+                <li><a id="Education" onclick="navItem('education')" href="#">Education</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" id="search-news" value="" placeholder="Search news..."/>
+                <button class="btn">Search</button>
+            </div>
+        </nav>
+        <div class="card-data">
+            <div  class="spinner-border" style="width: 20rem; height: 20rem; margin: 4rem auto; ;"  role="status">
+                <span class="visually-hidden">Loading...</span>
+              </div>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
